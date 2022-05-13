@@ -1,0 +1,42 @@
+<section *ngIf="!buttonClicked">
+    <div class="row justify-content-center align-items-center m-0 vh-100">
+        <div class="col-md-6 text-center">
+            <img class="flag mb-5" src="https://cdn-icons-png.flaticon.com/512/949/949851.png" alt="gayFlag">
+            <h1>Hola, ¿Quieres saber que tan gay eres?</h1>
+            <button (click)="getGayTest()" class="btn btn-color mt-3 p-3">
+                <h5 style="color: #fff">Ver qué tan gay soy</h5>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section *ngIf="buttonClicked">
+    <div class="row justify-content-center align-items-center m-0 vh-100">
+        <div class="col-md-6 text-center">
+            <h1>Hoy eres {{ gayLvl }}% gay!!</h1>
+            <img class="gayHeart" src="https://cdn-icons-png.flaticon.com/512/2284/2284888.png" alt="gayHeart">
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="row pb-3 justify-content-end">
+        <div class="col-md-2">
+            <p>Powered by JuanDi</p>
+        </div>
+        <div class="col-md-2">
+            <div class="row">
+                <a href="https://github.com/juandixdd" class="col-auto" target="_blank">
+                    <img class="social-media-img" src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+                        alt="github">
+                </a>
+                <a href="https://www.instagram.com/juandi.jpg/" class="col-auto" target="_blank">
+                    <img class="social-media-img" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                        alt="instagram">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</footer>
